@@ -1,5 +1,8 @@
 {
   "name": "calendarDemo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

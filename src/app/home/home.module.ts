@@ -5,9 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { NgCalendarModule } from 'ionic2-calendar';
+import { EventModalPage } from '../event-modal/event-modal.page';
+import { VideoPlayer } from '@ionic-native/video-player/ngx';
 
 @NgModule({
   imports: [
+    NgCalendarModule,
     CommonModule,
     FormsModule,
     IonicModule,
@@ -18,6 +22,8 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,EventModalPage],
+  entryComponents: [EventModalPage],
+  providers: [VideoPlayer]
 })
 export class HomePageModule {}
